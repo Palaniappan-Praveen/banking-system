@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 class CreateUserOtpsTable extends Migration
 {
     /**
-     * Run the migrations.
+     * Run the migrations to user_otps.
      *
      * @return void
      */
