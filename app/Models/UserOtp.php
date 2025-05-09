@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Carbon\Carbon;
 class UserOtp extends Model
 {
+    //added comments to the userotp model
     //use HasFactory;
     protected $fillable = ['phone', 'otp', 'expires_at'];
 
