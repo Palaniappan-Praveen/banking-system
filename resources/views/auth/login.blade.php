@@ -8,8 +8,8 @@
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
-                    <!--action="{{ route('login') }}"-->
-                    {{ session('otp1') }}
+                    <!--action="{{ route('login') }}"
+                    {{ session('otp1') }}-->
                     @include('partials.alerts')
                     <form method="POST" action="{{ route('login1') }}">
                         @csrf
@@ -18,7 +18,7 @@
                             <label for="phone" class="col-md-4 col-form-label text-md-end">{{ __('Phone') }}</label>
 
                             <div class="col-md-6">
-                                <input id="phone" type="phone" class="form-control @error('phone1') is-invalid @enderror"  name="phone1" value="{{ session('phone_no') }}" required  autofocus>
+                                <input id="phone" type="tel" class="form-control @error('phone1') is-invalid @enderror"  name="phone1" value="{{ session('phone_no') }}" required  autofocus>
 
                                 @error('phone')
                                     <span class="invalid-feedback" role="alert">

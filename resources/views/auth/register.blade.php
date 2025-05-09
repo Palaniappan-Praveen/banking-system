@@ -54,7 +54,7 @@
                         <label for="phone" class="col-md-4 col-form-label text-md-right">{{ __('Phone Number') }}</label>
 
                         <div class="col-md-6">
-                            <input id="phone" type="text" class="form-control" value="{{ session('phone') }}" />
+                            <input id="phone" type="tel" class="form-control" value="{{ session('phone') }}" />
                         </div>
                     </div>
 
