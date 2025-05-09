@@ -49,7 +49,8 @@ Route::get('/logout/confirm', function () {
 // Logout route (POST request for security)
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
-
+Route::post('/login1', [LoginController::class,'loginphone'])->name('login1');
+Route::post('/login' ,[LoginController::class,'login'])->name('login');
 
 Route::post('/debug', function(Request $request) {
     dd($request->all()); 

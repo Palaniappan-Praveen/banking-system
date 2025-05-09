@@ -13,8 +13,8 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    {{ __('You are logged in!') }}
+<p>
+You are logged in! Click on the <a class="nav-link" href="{{ route('home') }}">Dashboard</a></p>
                 </div>
             </div>
         </div>

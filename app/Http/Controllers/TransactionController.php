@@ -66,7 +66,7 @@ class TransactionController extends Controller
                 'account_id' => $account->id,
                 'amount' => -$request->amount,
                 'type' => 'transfer',
-                'currency' => $account->currency,
+                'currency' => $request->currency,
                 'conversion_rate' => $conversionRate,
                 'description' => $request->description,
                 'related_account_id' => $recipient->id,

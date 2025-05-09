@@ -58,7 +58,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group row">
+                    <!-- <div class="form-group row">
                         <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                         <div class="col-md-6">
@@ -78,9 +78,9 @@
                         <div class="col-md-6">
                             <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="row mb-3">
+                    <div class="row">
     <label for="dob" class="col-md-4 col-form-label text-md-end">Date of Birth</label>
     <div class="col-md-6">
         <input id="dob" type="date" 
@@ -95,7 +95,7 @@
 </div>
 
 <!-- Address -->
-<div class="row mb-3">
+<div class="row">
     <label for="address" class="col-md-4 col-form-label text-md-end">Address</label>
     <div class="col-md-6">
         <textarea id="address" class="form-control @error('address') is-invalid @enderror" 
