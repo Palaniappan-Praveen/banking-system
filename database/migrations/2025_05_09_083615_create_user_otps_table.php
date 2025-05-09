@@ -23,7 +23,7 @@ class CreateUserOtpsTable extends Migration
     }
 
     /**
-     * Reverse the migrations.
+     * Reverse the migrations to user_otps.
      *
      * @return void
      */
