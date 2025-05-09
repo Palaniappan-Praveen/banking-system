@@ -5,7 +5,7 @@
     <div class="col-md-6">
         <div class="card">
             <div class="card-header">Verify OTP</div>
-            {{ session('otp') }}
+            <!-- {{ session('otp') }} -->
             <div class="card-body">
                 @if (session('success'))
                     <div class="alert alert-success" role="alert">
