@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
@@ -66,4 +66,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 =======
 # banking-system
 Banking System application in laravel Assignment MNK GCS
->>>>>>> e29d8ad9b3e33d862ae7711317358e296e605b89
+
