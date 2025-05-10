@@ -14,7 +14,7 @@
                         </div>
                     @endif
 <p>
-You are logged in! Click on the <a class="nav-link" href="{{ route('home') }}">Dashboard</a></p>
+You are logged in! Click on the <a href="{{ route('home') }}">Dashboard</a></p>
                 </div>
             </div>
         </div>

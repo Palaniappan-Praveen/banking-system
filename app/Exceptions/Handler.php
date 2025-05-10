@@ -4,9 +4,19 @@ namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
-
+use Symfony\Component\HttpFoundation\Response;
 class Handler extends ExceptionHandler
 {
+
+    public function render($request, Throwable $exception)
+{
+    if ($exception instanceof \Illuminate\Http\Exceptions\ThrottleRequestsException) {
+        return response()->view('errors.429', ['message' => 'Too many requests. Please wait a moment.'], Response::HTTP_TOO_MANY_REQUESTS);
+    }
+
+    return parent::render($request, $exception);
+}
+    
     /**
      * A list of the exception types that are not reported.
      *
